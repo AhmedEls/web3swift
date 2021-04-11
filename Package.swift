@@ -22,8 +22,8 @@ let package = Package(
     .target(
       name: "web3swift",
       dependencies: ["BigInt", "secp256k1", "PromiseKit", "Starscream", "CryptoSwift"],
-      exclude: [
-        ]),
+      path: ["Sources"]
+    ),
     .testTarget(
       name: "web3swiftTests",
       dependencies: ["web3swift"]),
